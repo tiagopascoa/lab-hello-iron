@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import About from "./About";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div class="app">
+        <nav class="navbar-container">
+          <div>
+            <img src="./ironhack-logo.svg" className="App-logo" alt="logo" />
+          </div>
+          <div>
+            <img src="./menu-top.svg" className="App-logo" alt="logo" />
+          </div>
+        </nav>
+        <div class="app-body">
+          <h1>Say Hello to ReactJS</h1>
+          <h4 class="app-body-text">
+            You will learn how to use the most popular frontend library, and
+            become a super Ninja developer
+          </h4>
+          <a class="awesome-btn" href="#">
+            Awesome!
+          </a>
+        </div>
+      </div>
+      <About />
+    </>
   );
 }
 
